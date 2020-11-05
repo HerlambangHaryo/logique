@@ -1,0 +1,109 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3",
+        "fideloper/proxy": "^4.2",
+        "fruitcake/laravel-cors": "^2.0",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "jenssegers/agent": "^2.6",
+        "laravel/framework": "^8.0",
+        "laravel/jetstream": "^1.5",
+        "laravel/sanctum": "^2.7",
+        "laravel/tinker": "^2.0",
+        "livewire/livewire": "^2.0",
+        "maatwebsite/excel": "^3.1",
+        "yajra/laravel-datatables-oracle": "~9.0"
+    },
+    "require-dev": {
+        "facade/ignition": "^2.3.6",
+        "fzaninotto/faker": "^1.9.1",
+        "mockery/mockery": "^1.3.1",
+        "nunomaduro/collision": "^5.0",
+        "phpunit/phpunit": "^9.3"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        },
+        "files":[            
+            "app/Helper/dmha/system/helper_dmha_1.php",
+            "app/Helper/dmha/system/helper_dmha_122.php",
+            "app/Helper/dmha/system/helper_dmha_162.php",
+            "app/Helper/dmha/system/helper_dmha_2.php",
+            "app/Helper/dmha/system/helper_dmha_3.php",
+            "app/Helper/dmha/system/helper_dmha_4.php",
+            "app/Helper/dmha/system/helper_dmha_8.php",
+            "app/Helper/dmha/system/helper_dmha_5.php",
+            "app/Helper/dmha/system/helper_dmha_157.php",
+            "app/Helper/dmha/system/helper_dmha_322.php",
+            "app/Helper/dmha/system/helper_dmha_9.php",
+            "app/Helper/dmha/system/helper_dmha_271.php",
+            "app/Helper/dmha/system/helper_dmha_300.php",
+            "app/Helper/dmha/system/helper_dmha_15.php",
+            "app/Helper/dmha/system/helper_dmha_13.php",
+            "app/Helper/dmha/system/helper_dmha_40.php",
+            "app/Helper/dmha/system/helper_dmha_14.php",
+            "app/Helper/dmha/system/helper_dmha_360.php",
+            "app/Helper/dmha/system/helper_dmha_326.php",
+            "app/Helper/dmha/system/helper_dmha_158.php",
+            "app/Helper/dmha/system/helper_dmha_431.php",
+
+            "app/Helper/php/helper_php_modification.php",
+            "app/Helper/system/helper_rules_general.php",
+
+            "app/Helper/UI/helper_UI_table.php",
+            "app/Helper/UI/helper_UI_breadcrumb.php",
+            "app/Helper/UI/helper_UI_form.php",
+            "app/Helper/UI/helper_UI_button.php",
+
+            "app/Helper/ajax/helper_ajax_data.php",
+            "app/Helper/ajax/helper_ajax_form.php",
+            
+            "app/Helper/dmha/parasuhu/helper_dmha_426.php",
+            
+            "app/Helper/dmha/additional/helper_dmha_452.php",
+
+            "app/Helper/template/helper_color_admin_apple_v42.php"
+
+    
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    }
+}

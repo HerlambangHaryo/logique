@@ -1,0 +1,56 @@
+body{
+    font-size:13px;
+}
+.form-control{
+    font-size:13px;
+}
+.display-none{
+    display: none;
+}
+
+.alert.alert-success {
+    background: #4cd964;
+    color: #266d32;
+}
+
+.dropdown-toggle-new:after {
+    border-width: 4px;
+}
+.dropdown-toggle-new::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+
+.fullscreen {
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .header.navbar-small.navbar-transparent .navbar-collapse, .navbar-transparent .navbar-collapse {
+        background: transparent; 
+    }
+}
+
+
+.row-login {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+@media (min-width: 768px)
+{
+    .header.navbar .navbar-nav>li>.form-group-helper-header {
+        padding: 18px 10px;
+    }
+}
